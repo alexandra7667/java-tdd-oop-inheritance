@@ -19,7 +19,7 @@ public class Library {
         List<LibraryItem> filtered = this.libraryItems
                 .stream()
                 .filter(item -> item.title.equals(title))
-                .collect(Collectors.toList());
+                .toList();
 
         if (filtered.size() < 1) {
             return "item is not part of the library's collection";
@@ -32,7 +32,7 @@ public class Library {
         List<LibraryItem> filtered = this.libraryItems
                 .stream()
                 .filter(item -> item.title.equals(title))
-                .collect(Collectors.toList());
+                .toList();
 
         if (filtered.size() < 1) {
             return "item is not part of the library's collection";
